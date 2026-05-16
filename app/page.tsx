@@ -42,6 +42,8 @@ export default function Home() {
 
           <p className="mb-4">
             Managed Ventures LLC<br />
+            18291 N Pima Rd, Suite 110-411<br />
+            Scottsdale, AZ 85255<br />
             Email: <a href="mailto:legal@managedv.com" className="text-primary hover:underline">legal@managedv.com</a>
           </p>
         </div>
@@ -72,6 +74,8 @@ export default function Home() {
 
           <p className="mb-4">
             Managed Ventures LLC<br />
+            18291 N Pima Rd, Suite 110-411<br />
+            Scottsdale, AZ 85255<br />
             Email: <a href="mailto:legal@managedv.com" className="text-primary hover:underline">legal@managedv.com</a>
           </p>
         </div>
@@ -321,7 +325,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:flex-row justify-between w-full">
             <p className="text-center md:text-left text-sm text-gray-500">
-              Managed Ventures LLC • Scottsdale, AZ
+              Managed Ventures LLC • 18291 N Pima Rd Ste 110-411, Scottsdale, AZ 85255
             </p>
             <div className="flex flex-wrap justify-center md:justify-end mt-4 md:mt-0 gap-4">
               <button 

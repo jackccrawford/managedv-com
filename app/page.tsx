@@ -193,7 +193,24 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col min-h-screen pt-16">
-        <div id="about" className="flex flex-col items-center justify-center min-h-screen px-4 pt-16 sm:pt-24 relative z-10">
+        <div id="about" className="relative flex flex-col items-center justify-center min-h-screen px-4 pt-16 sm:pt-24 overflow-hidden">
+          {/* Hero video background */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none motion-reduce:hidden"
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
+          {/* Gradient overlay keeps headline, sub, and cards readable. */}
+          <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-b from-gray-900/85 via-gray-900/55 to-gray-900/95"></div>
+
+          {/* Content sits above the video and overlay */}
+          <div className="relative z-10 flex flex-col items-center w-full">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -249,7 +266,65 @@ export default function Home() {
           >
             Also at <a href="https://agentdoor.ai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary underline underline-offset-2 transition-colors">agentdoor.ai</a> &middot; an open-source tools collection in progress.
           </motion.p>
+          </div>
         </div>
+
+        <section id="thesis" className="py-20 px-4 bg-gray-900/50 backdrop-blur-sm">
+          <div className="max-w-5xl mx-auto">
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center mb-14"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">
+                What &ldquo;AI-native&rdquo; actually means.
+              </h2>
+              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+                Three architectural commitments the operating companies hold to.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-3 gap-10 md:gap-12">
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl font-semibold mb-3 text-primary">Persistent memory.</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Default cloud AI starts every session from zero. The companies we hold build on memory that survives session, compute, and substrate boundaries.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.15 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl font-semibold mb-3 text-primary">Local-first by architecture.</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  The products we ship run on the customer&apos;s own machine. Sovereignty is structural, not a marketing claim.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-xl font-semibold mb-3 text-primary">Open at the substrate.</h3>
+                <p className="text-gray-400 leading-relaxed">
+                  Memory infrastructure is too foundational to rent. Geniuz is MIT-licensed so anyone can verify it, fork it, or run it without us.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
 
         <section id="contact" className="py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">

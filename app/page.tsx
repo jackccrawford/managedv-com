@@ -206,8 +206,8 @@ export default function Home() {
           >
             <source src="/hero-video.mp4" type="video/mp4" />
           </video>
-          {/* Gradient overlay keeps headline, sub, and cards readable. */}
-          <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-b from-gray-900/85 via-gray-900/55 to-gray-900/95"></div>
+          {/* Gradient overlay keeps headline and cards readable while letting more of the video show. */}
+          <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-b from-gray-900/65 via-gray-900/25 to-gray-900/80"></div>
 
           {/* Content sits above the video and overlay */}
           <div className="relative z-10 flex flex-col items-center w-full">
@@ -221,7 +221,7 @@ export default function Home() {
               Building
               <span className="text-primary block">AI-native operating companies.</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
               Managed Ventures LLC is the holding entity behind mVara and Geniuz.
             </p>
           </motion.div>
@@ -269,7 +269,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section id="thesis" className="py-20 px-4 bg-gray-900/50 backdrop-blur-sm">
+        <section id="thesis" className="py-20 px-4 bg-gray-800/40 border-y border-white/10">
           <div className="max-w-5xl mx-auto">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
@@ -278,11 +278,14 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-14"
             >
+              <span className="text-xs font-semibold uppercase tracking-widest text-primary mb-4 block">
+                Managed Ventures&rsquo; Thesis
+              </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">
-                What &ldquo;AI-native&rdquo; actually means.
+                AI is moving to relationships.
               </h2>
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                Three architectural commitments the operating companies hold to.
+              <p className="text-lg text-gray-300 italic max-w-2xl mx-auto">
+                Without the awareness spookiness.
               </p>
             </motion.div>
 

@@ -27,6 +27,7 @@ export default function Home() {
           <h3 className="text-lg font-semibold mb-2">Our Brands</h3>
           <p className="mb-4"><strong>mVara</strong> (mvara.ai) is our operating company. It delivers AI transformation engagements built on our memory infrastructure.</p>
           <p className="mb-4"><strong>Geniuz</strong> (geniuz.life) is our open-source product. It is released under the MIT License and runs on the user&apos;s own machine.</p>
+          <p className="mb-4"><strong>AgentDoor</strong> (agentdoor.ai) is an open-source tools collection.</p>
 
           <h3 className="text-lg font-semibold mb-2">Website Content</h3>
           <p className="mb-4">The website design, text, graphics, and logos are owned by Managed Ventures LLC and may not be reproduced without permission.</p>
@@ -218,7 +219,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <div className="relative bg-white border border-gray-200 rounded-xl p-6 shadow-lg h-full group-hover:shadow-xl transition-shadow">
                 <div className="mb-4">
-                  <Image src="/images/mvara-relay-wordmark-light.png" alt="mVara" width={120} height={32} className="h-7 w-auto" priority />
+                  <Image src="/images/mvara-wordmark-light-bg.png" alt="mVara" width={120} height={32} className="h-7 w-auto" priority />
                 </div>
                 <p className="text-gray-700 text-sm">
                   Operating company. AI deployment for established firms, scaled by AI itself. Persistent memory infrastructure running on the customer&apos;s own machines.
@@ -239,6 +240,15 @@ export default function Home() {
               </div>
             </a>
           </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.9, duration: 0.6 }}
+            className="text-sm text-gray-500 mt-8"
+          >
+            Also at <a href="https://agentdoor.ai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary underline underline-offset-2 transition-colors">agentdoor.ai</a> &middot; an open-source tools collection in progress.
+          </motion.p>
         </div>
 
         <section id="contact" className="py-16 px-4">

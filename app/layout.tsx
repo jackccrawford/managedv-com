@@ -5,15 +5,14 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.png',
   },
-  title: 'ManagedV - Building AI-First Ventures',
-  description: 'Premier AI venture builder and technology incubator in Scottsdale. Managed Ventures LLC specializes in launching, innovating, and scaling AI-first companies with proven expertise. Transform your visionary AI concepts into market-changing realities.',
-  keywords: 'AI ventures, startup incubator, AI investment, venture building, AI innovation, tech startups, Scottsdale',
+  title: 'Managed Ventures',
+  description: 'Managed Ventures LLC is the holding entity behind mVara and Geniuz. AI-native operating businesses and open-source products.',
   authors: [{ name: 'Jack Crawford', url: 'https://managedv.com' }],
   creator: 'Managed Ventures LLC',
   publisher: 'Managed Ventures LLC',
   openGraph: {
-    title: 'ManagedV - Building AI-First Ventures',
-    description: 'Unlock the future of AI innovation with Managed Ventures LLC, the premier AI venture builder and technology incubator in Scottsdale. Discover how our expertise in launching, innovating, and scaling AI-first companies can transform your visionary concepts into market-changing realities.',
+    title: 'Managed Ventures',
+    description: 'Managed Ventures LLC is the holding entity behind mVara and Geniuz. AI-native operating businesses and open-source products.',
     url: 'https://managedv.com',
     siteName: 'Managed Ventures',
     locale: 'en_US',
@@ -21,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ManagedV - Building AI-First Ventures',
-    description: 'Premier AI venture builder specializing in launching, innovating, and scaling AI-first companies with proven expertise in the technology sector.',
+    title: 'Managed Ventures',
+    description: 'Managed Ventures LLC is the holding entity behind mVara and Geniuz.',
     creator: '@jackccrawford',
   },
   robots: {

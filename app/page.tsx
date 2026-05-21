@@ -24,9 +24,9 @@ export default function Home() {
           <p className="mb-4"><strong>Effective Date:</strong> April 1, 2026</p>
           <p className="mb-4"><strong>Managed Ventures LLC</strong> operates this website. By using this website, you agree to these terms.</p>
 
-          <h3 className="text-lg font-semibold mb-2">Our Ventures</h3>
-          <p className="mb-4"><strong>mVara</strong> (mvara.ai) is our AI memory and intelligence platform. RELAY is a commercial product requiring a separate license agreement.</p>
-          <p className="mb-4"><strong>AgentDoor</strong> (agentdoor.ai) hosts our open source tools under the MIT License, including Geniuz, Clawmark, Token Scout, and Sendblue MCP.</p>
+          <h3 className="text-lg font-semibold mb-2">Our Brands</h3>
+          <p className="mb-4"><strong>mVara</strong> (mvara.ai) is our operating company. It delivers AI transformation engagements built on our memory infrastructure.</p>
+          <p className="mb-4"><strong>Geniuz</strong> (geniuz.life) is our open-source product. It is released under the MIT License and runs on the user&apos;s own machine.</p>
 
           <h3 className="text-lg font-semibold mb-2">Website Content</h3>
           <p className="mb-4">The website design, text, graphics, and logos are owned by Managed Ventures LLC and may not be reproduced without permission.</p>
@@ -87,10 +87,10 @@ export default function Home() {
           <p className="mb-4">Copyright &copy; 2026 Managed Ventures LLC. All Rights Reserved.</p>
 
           <h3 className="text-lg font-semibold mb-2">Open Source (MIT License)</h3>
-          <p className="mb-4">The following products are available under the MIT License at github.com/jackccrawford: Geniuz, Clawmark, Token Scout, Sendblue MCP. Full license text is available in each repository.</p>
+          <p className="mb-4"><strong>Geniuz</strong> is available under the MIT License at <a href="https://github.com/jackccrawford/geniuz" target="_blank" rel="noopener" className="text-primary hover:underline">github.com/jackccrawford/geniuz</a>. Additional open-source tools are available at <a href="https://github.com/jackccrawford" target="_blank" rel="noopener" className="text-primary hover:underline">github.com/jackccrawford</a>. Full license text is available in each repository.</p>
 
-          <h3 className="text-lg font-semibold mb-2">Commercial Products</h3>
-          <p className="mb-4">RELAY is a proprietary commercial product owned by Managed Ventures LLC. RELAY is not open source and requires a separate written license agreement. For licensing inquiries, contact legal@managedv.com.</p>
+          <h3 className="text-lg font-semibold mb-2">Commercial Engagements</h3>
+          <p className="mb-4">mVara (mvara.ai) provides AI transformation engagements built on the Geniuz substrate. Engagement terms are scoped per partnership. For inquiries, contact <a href="mailto:legal@managedv.com" className="text-primary hover:underline">legal@managedv.com</a>.</p>
 
           <h3 className="text-lg font-semibold mb-2">Website</h3>
           <p className="mb-4">All website content, design, and branding are proprietary and may not be reproduced without written permission.</p>
@@ -180,14 +180,12 @@ export default function Home() {
             <div className="absolute top-full left-0 right-0 bg-gray-800/90 backdrop-blur-sm p-4 md:hidden">
               <ul className="flex flex-col space-y-4 items-end pr-4">
                 <li><a href="#about" className="hover:text-primary block py-2" onClick={() => setMobileMenuOpen(false)}>About</a></li>
-                <li><a href="#approach" className="hover:text-primary block py-2" onClick={() => setMobileMenuOpen(false)}>Approach</a></li>
                 <li><a href="#contact" className="hover:text-primary block py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
               </ul>
             </div>
           )}
           <ul className="nav-menu hidden md:flex space-x-4">
             <li><a href="#about" className="hover:text-primary">About</a></li>
-            <li><a href="#approach" className="hover:text-primary">Approach</a></li>
             <li><a href="#contact" className="hover:text-primary">Contact</a></li>
           </ul>
         </nav>
@@ -203,10 +201,10 @@ export default function Home() {
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
               Building
-              <span className="text-primary block">AI-First Ventures</span>
+              <span className="text-primary block">AI-native operating companies.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-              Turning visionary AI concepts into market-changing realities
+              Managed Ventures LLC is the holding entity behind mVara and Geniuz.
             </p>
           </motion.div>
 
@@ -220,92 +218,33 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <div className="relative bg-white border border-gray-200 rounded-xl p-6 shadow-lg h-full group-hover:shadow-xl transition-shadow">
                 <div className="mb-4">
-                  <Image src="/images/mvara-relay-wordmark-light.png" alt="mVara RELAY" width={120} height={32} className="h-7 w-auto" priority />
+                  <Image src="/images/mvara-relay-wordmark-light.png" alt="mVara" width={120} height={32} className="h-7 w-auto" priority />
                 </div>
                 <p className="text-gray-700 text-sm">
-                  AI memory and intelligence infrastructure. RELAY gives teams persistent, shared knowledge that their AI remembers across every session.
+                  Operating company. AI deployment for established firms, scaled by AI itself. Persistent memory infrastructure running on the customer&apos;s own machines.
                 </p>
               </div>
             </a>
 
-            <a href="https://agentdoor.ai" target="_blank" className="relative group block">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-yellow-500/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+            <a href="https://geniuz.life" target="_blank" className="relative group block">
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <div className="relative bg-white border border-gray-200 rounded-xl p-6 shadow-lg h-full group-hover:shadow-xl transition-shadow">
-                <div className="mb-4">
-                  <Image src="/images/agentdoor-wordmark.png" alt="agentdoor" width={140} height={32} className="h-7 w-auto" />
+                <div className="mb-4 flex items-center gap-2">
+                  <Image src="/images/geniuz-icon.svg" alt="" width={28} height={28} className="h-7 w-auto" />
+                  <span className="text-gray-900 text-xl font-bold tracking-tight">Geniuz</span>
                 </div>
                 <p className="text-gray-700 text-sm">
-                  Open source tools for AI agents. Geniuz, Clawmark, Token Scout, and more — free on GitHub.
+                  Open-source memory for AI agents. MIT-licensed, runs on your machine, no account. The substrate that lets your AI remember across every session.
                 </p>
               </div>
-            </a>
-          </motion.div>
-
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.5 }}
-            className="mt-12"
-          >
-            <a href="#contact" className="bg-primary hover:bg-yellow-400 text-black font-bold px-8 py-3 rounded-lg inline-block transition-all hover:shadow-lg active:bg-yellow-500 active:scale-95">
-             Explore your next venture!
             </a>
           </motion.div>
         </div>
 
-        <section id="approach" className="pt-16 pb-16 px-4 bg-gray-900/50 backdrop-blur-sm">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">The Approach</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                className="flex flex-col items-center text-center"
-              >
-                <svg className="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-                <h3 className="text-xl font-semibold mb-2">Launch</h3>
-                <p className="text-gray-400">Transform your cutting-edge AI concept into a market-ready venture</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="flex flex-col items-center text-center"
-              >
-                <svg className="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                </svg>
-                <h3 className="text-xl font-semibold mb-2">Innovate</h3>
-                <p className="text-gray-400">Push the boundaries of what&apos;s possible with AI</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="flex flex-col items-center text-center"
-              >
-                <svg className="w-12 h-12 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                </svg>
-                <h3 className="text-xl font-semibold mb-2">Scale</h3>
-                <p className="text-gray-400">Accelerate growth with proven AI expertise</p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
         <section id="contact" className="py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Get in Touch</h2>
-            <p className="text-lg text-gray-400 mb-8">Ready to build something extraordinary with AI?</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Contact</h2>
+            <p className="text-lg text-gray-400 mb-8">For partnership and engagement inquiries.</p>
             <a
               href="https://x.com/jackccrawford"
               target="_blank"

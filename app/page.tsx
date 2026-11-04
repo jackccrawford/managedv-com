@@ -14,7 +14,7 @@ export default function Home() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
   
-  const openModal = (title: string, contentType: 'tos' | 'privacy' | 'license') => {
+  const openModal = (title: string, contentType: 'tos' | 'license') => {
     let content: React.ReactNode;
     
     if (contentType === 'tos') {
@@ -40,38 +40,6 @@ export default function Home() {
 
           <h3 className="text-lg font-semibold mb-2">Governing Law</h3>
           <p className="mb-4">These terms are governed by the laws of the State of California. Any disputes shall be resolved through mediation, and if unresolved, by binding arbitration administered by JAMS in Scottsdale, Arizona.</p>
-
-          <p className="mb-4">
-            Managed Ventures LLC<br />
-            18291 N Pima Rd, Suite 110-411<br />
-            Scottsdale, AZ 85255<br />
-            Email: <a href="mailto:legal@managedv.com" className="text-primary hover:underline">legal@managedv.com</a>
-          </p>
-        </div>
-      );
-    } else if (contentType === 'privacy') {
-      content = (
-        <div className="text-gray-300">
-          <h2 className="text-xl font-bold mb-4">Privacy Policy</h2>
-          <p className="mb-4"><strong>Effective Date:</strong> April 1, 2026</p>
-          <p className="mb-4"><strong>Managed Ventures LLC</strong> operates this website.</p>
-
-          <h3 className="text-lg font-semibold mb-2">What We Collect</h3>
-          <p className="mb-4">This website does not use cookies, tracking pixels, or analytics services. We do not create user accounts. If you contact us, we collect only the information you provide (name, email, message).</p>
-
-          <h3 className="text-lg font-semibold mb-2">What We Don&apos;t Do</h3>
-          <ul className="list-disc pl-6 mb-4">
-            <li>We do not track visitors to this website.</li>
-            <li>We do not use cookies.</li>
-            <li>We do not sell data.</li>
-            <li>We do not use your data to train AI models.</li>
-          </ul>
-
-          <h3 className="text-lg font-semibold mb-2">Your Rights</h3>
-          <p className="mb-4">You may request access to, correction of, or deletion of any personal information we hold about you by emailing legal@managedv.com. California residents have additional rights under the CCPA. We do not sell personal information.</p>
-
-          <h3 className="text-lg font-semibold mb-2">Security</h3>
-          <p className="mb-4">We use standard security practices to protect any information you provide. However, no method of transmission over the internet is completely secure.</p>
 
           <p className="mb-4">
             Managed Ventures LLC<br />
@@ -364,12 +332,9 @@ export default function Home() {
               >
                 Terms of Service
               </button>
-              <button 
-                onClick={() => openModal('Privacy Policy', 'privacy')} 
-                className="text-xs text-gray-500 hover:text-primary transition-colors"
-              >
+              <a href="/privacy" className="text-xs text-gray-500 hover:text-primary transition-colors">
                 Privacy Policy
-              </button>
+              </a>
               <button 
                 onClick={() => openModal('License', 'license')} 
                 className="text-xs text-gray-500 hover:text-primary transition-colors"

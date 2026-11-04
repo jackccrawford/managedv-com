@@ -30,14 +30,14 @@ export default function PrivacyPage() {
         <p className="mb-8">We receive what you send, and use it to reply. We do not sell personal information or use it to train AI models.</p>
 
         <h2 className="text-xl font-semibold text-white mb-2">Your rights</h2>
-        <p className="mb-8">To ask what we hold about you, or to have it corrected or deleted, email <a href="mailto:legal@managedv.com" className="underline hover:text-white">legal@managedv.com</a>. California residents have additional rights under the CCPA.</p>
+        <p className="mb-8">To ask what we hold about you, or to have it corrected or deleted, email <a href="mailto:jcc@managedv.com" className="underline hover:text-white">jcc@managedv.com</a>. California residents have additional rights under the CCPA.</p>
 
         <h2 className="text-xl font-semibold text-white mb-2">Contact</h2>
         <p>
           Managed Ventures LLC<br />
           18291 N Pima Rd, Ste 110-411<br />
           Scottsdale, AZ 85255<br />
-          <a href="mailto:legal@managedv.com" className="underline hover:text-white">legal@managedv.com</a>
+          <a href="mailto:jcc@managedv.com" className="underline hover:text-white">jcc@managedv.com</a>
         </p>
       </article>
     </main>
